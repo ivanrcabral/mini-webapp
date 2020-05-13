@@ -1,0 +1,89 @@
+@import './animations.scss';
+@import './default.scss';
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+.bg-gradient-left {
+  background: linear-gradient(to right, black, black, transparent);
+  height: 100vh;
+  z-index: 1031;
+  width: 100%;
+}
+
+.detail-movie {
+  position: relative;
+  z-index: 1032;
+}
+
+header {
+  position: relative;
+  display: flex;
+  height: 70px;
+  padding: 0 50px;
+  font-size: x-large;
+  font-weight: 600;
+  align-items: center;
+  z-index: 1090;
+}
+
+.coment-container {
+  background: #1d1d1d;
+  border-radius: 5px;
+  padding: 15px;
+}
+.coment-title {
+  font-size: 1.2rem;
+}
+.coment-detail {
+  color: gray;
+}
+
+.image-cover-bg {
+  height: 100vh;
+  background-size: cover;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.movie-box {
+  text-align: center;
+  cursor: pointer;
+  margin: 10px;
+  width: 230px;
+  background: #0e0e0e;
+  border-radius: 15px;
+  padding-bottom: 5px;
+}
+
+.movie-box .m-img {
+  width: 230px;
+  height: 300px;
+  background: lightgray;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+.movie-box .m-title {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  white-space: normal;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.movie-box .m-date {
+  margin-top: 5px;
+  color: gray;
+  font-size: 0.9rem;
+}

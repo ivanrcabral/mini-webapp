@@ -1,0 +1,43 @@
+
+.animateFadeIn {
+  width: 100%;
+  -webkit-animation: animate-fade-in 1.5s; /* Safari 4+ */
+  -moz-animation:    animate-fade-in 1.5s; /* Fx 5+ */
+  -o-animation:      animate-fade-in 1.5s; /* Opera 12+ */
+  animation:         animate-fade-in 1.5s; /* IE 10+, Fx 29+ */
+  position: relative;
+}
+
+@keyframes animate-fade-in {
+  0% {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+
+.box:hover .effect-glass {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url(/glass1.png), url(/glass2.png);
+  animation: glass 30s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  right: 0;
+  border-radius: 5px;
+}
+
+@keyframes glass {
+  0% {
+      background-position: 0px 0px, 0px 0px, 0px 0px
+  }
+
+  100% {
+      background-position: 500px 1000px, 400px 400px
+  }
+}
+
+

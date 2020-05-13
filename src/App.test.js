@@ -1,12 +1,15 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { configure, shallow } from "enzyme";
 
 import Header from "./App/Components/Header/header";
 import Home from "./App/Components/Home/home";
 import Movies from "./App/Components/Home/movies";
 import Movie from "./App/Components/Movie/movie";
-import MovieDetail from "./App/Components/Movie/movieDetail";
+import MovieDetail from "./App/Components/Movie/movie-details";
 
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adapter() });
 
 describe("<Header />", () => {
 
@@ -40,7 +43,7 @@ describe("<Movies />", () => {
 
 describe("<Movie />", () => {
 
-  const component = shallow(<Movie />);
+  const component = shallow(<Movie location={ {state: { id: 184314}} } />);
 
   it("should render a <Movie /> component", () => {
       expect(component).toBeDefined();
