@@ -1,4 +1,8 @@
+
+
 # Mini WebApp
+
+![Image banner](https://i.ibb.co/tPhVrV0/Captura-de-pantalla-2020-05-13-a-las-21-42-47.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
